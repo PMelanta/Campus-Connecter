@@ -1,0 +1,1690 @@
+/* CSS Document */
+
+html { overflow: -moz-scrollbars-vertical; }
+
+body {
+   font-family:  Verdana, Arial, Helvetica, sans-serif;
+   font-size: 73%;
+   background-color: #B7B7FF;    
+}
+
+.footer {
+   font-size:75%;
+}
+
+.inset {
+   background-color: #919DB5;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-left: 5px;
+   padding-right: 5px;  
+}
+
+input,select,textarea,.displayText{
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 100%;
+   color: #000099;
+}
+
+.evenRow {
+   background-color: #E9EBEF; 
+   height: 20px;
+}
+
+.evenRow td,th {
+   height: 25px;
+}
+
+.evenRow input {
+   background-color: #E9EBEF; 
+   border:0;
+}
+
+.oddRow {
+   background-color:#F8F7FB; 
+   height: 20px;
+}
+
+.oddRow td,th {
+   height: 25px;
+}
+
+.oddRow input {
+   background-color:#FFFFFF; 
+   border:0;
+}
+
+.evenRowColor {
+   background-color: #E9EBEF; 
+}
+
+.oddRowColor {
+   background-color: #FFFFFF;
+}
+
+.newIconForLiveEnv { 
+   background-color:#FFFF64;
+   padding-top: 3px ;
+   padding-bottom: 3px ;
+   padding-left: 5px ;
+   padding-right: 5px ;
+   font-weight: bold;
+}
+
+.newIconForTrainingEnv { 
+   background-color:#F9DA1C;
+   padding-top: 3px ;
+   padding-bottom: 3px ;
+   padding-left: 5px ;
+   padding-right: 5px ;
+   font-weight: bold;
+}
+
+.extUnitTest {
+   color: orange;
+}
+
+.selectedMenu {
+   background-color: #FBC64A;
+   color: #000000;
+}
+
+.mouseOverMenuColor {
+   background-color: #B4BCCC;
+   color: #000000;
+}
+
+.mouseOutMenuColor {
+   background-color: #D5DAE3;
+   color: #000000;
+}
+
+.selectedRow {
+   background-color: #FBC64A;
+}
+
+.leaveColour{
+   background-color: #00FF00;
+}
+
+.shiftChange{
+   background-color: #FBC64A;
+}
+.holidayColour{
+   background-color: #616D7E;
+}
+
+
+.selectedRow input {
+   background-color: #FBC64A;
+   border:0;
+}
+
+.activityBar {
+   background-color: #7F8DA8; 
+   color : #ffffff;
+   font-weight: bold;
+}
+
+.activityBarMenu {
+   background-color: #E9E9F3;
+}
+
+.activityBar input {
+   background-color: #7F8DA8; 
+   color : #ffffff;
+   border:0;
+   font-weight: bold;
+}
+
+.highlightedRow {
+   background-color:#CCFFCC;
+   height: 20px;
+}
+
+.highlightedRow input {
+   background-color:#CCFFCC;
+   border:0;
+}
+
+.formTableHeaderColor   {
+   background-color: #FFFCCC;
+}
+
+#innerTable{
+   background-color: #FFFCCC;
+}
+
+.selectedRow input.apptRowBtn {
+   border:1px solid;
+   background-color:#fed
+}
+
+.selectedRow input.apptCancelBtn {
+   border:1px solid;
+   border-color:gray;
+   color:maroon;
+   font-weight:bold;
+}
+
+.boxShape {
+   /*
+       border-top: 1px solid #360 ;
+       border-left: 1px solid #360 ; 
+       border-right: 1px solid #360 ; 
+       border-bottom: 1px solid #360 ; 
+       border-color: #999999 ;
+   */
+}
+
+.epr {
+}
+
+a {
+   text-decoration: none;
+   color: #0000CC;
+}
+
+a:hover{
+   text-decoration: underline;
+}
+
+a.selectedLink{
+   font-weight: bold ;
+   background-color: #FFFF66;
+}
+
+a.deSelectedLink{
+   font-weight: normal ;
+   background-color: #FFFFFF;
+}
+
+.mandatoryField{
+   color: #FF0033;
+   font-weight: bold;
+}
+
+.headerEntityName {
+   font-weight: bold;
+}
+
+.displayPointer{
+   cursor: pointer;
+}
+
+.arrow{
+   font-family: Arial, Helvetica, sans-serif;
+   cursor: pointer;
+   cursor: hand;
+}
+
+.pagingControl{
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+input.pagingControl {
+   cursor: pointer;
+   color: black;
+}
+
+span.pagingControl {
+   color: black;
+   font-weight: bold;
+}
+
+.deleteCaption{
+   font-weight: bold;
+   color: red;
+   cursor: pointer;
+   cursor: hand;
+}
+
+.menuHeading{
+   color: #FFFFFF;
+   text-decoration: none;
+   //    background-color: #C32020 ;
+   border: 0 ;
+}
+
+.commonbg {
+   background-color: #ABABAB;
+}
+
+.infoButton {
+   cursor:pointer;
+   background-color: blue;
+   color:#FFFFFF;
+   font-weight: bold;
+   font-size: 100%;
+
+}
+
+.infoText{
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   color:#999999;
+}
+
+.hyperText{
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.lineHeading {
+   font-weight: bold;
+}
+
+.menuLink{
+   color: #000000;
+   text-decoration: none;
+   text-indent: 5px;
+   padding-top: 4px ;
+   padding-bottom: 4px;
+}
+
+a.menuLink:hover{
+   text-decoration: underline;
+}
+
+span.menuLink:hover{
+   text-decoration: underline;
+}
+
+.generalLink{
+   color: #ffffff;
+   font-weight: bold;
+   //    background-color: #C32020 ;
+   border: 0 ;
+}
+
+.menuTable{
+   color: #000000;
+   background-color: #CCCCCC ;
+   border: 0 ;
+
+}
+
+.heading{
+   color: #ffffff;
+   text-decoration: none;
+   font-weight: bold;
+   //    background-color: #C32020 ;
+   background-color: #445677; 
+   border: 0 ;
+}
+
+.subHeading{
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   color: #ffffff;
+   text-decoration: none;
+   font-weight: bold;
+   //    background-color: #C32020 ;
+   border: 0 ;
+}
+
+.basebg{
+   background-color: #cccccc;
+   color:#000000;
+}
+
+.userInfo{
+   color: #FF0000 ;
+   border: 0 ;
+   cursor: default ;
+   font-style: italic ;
+}
+
+.readOnly{
+   border: 0 ;
+   overflow: hidden ;
+   background-color: transparent;
+   cursor: default ;
+}
+
+.editMode{
+   border: 1 ;
+   overflow: auto;
+   cursor: text;
+}
+
+.visible{
+   visibility: visible;
+   display: '';
+}
+
+.hidden{
+   visibility: hidden;
+   display: none;
+}
+
+div.footer{
+   color: #666666; 
+}
+
+.centered {
+   position: absolute;
+   left: 40%;
+   top: 40%;
+   margin: auto;
+   background-color: #E0E0E0;
+   color: black;
+   font-weight: bold;
+   font-family: Arial, Helvetica, sans-serif ;
+   text-align: center ;
+   margin: 10px 0 0 0 ;
+   border: #666666 1px solid ;
+}
+
+span.title{
+   color: #000000;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+td.inputRow{
+
+}
+
+td.title{
+   background-repeat: no-repeat;
+   //    border-bottom: 2px solid #C32020;
+}
+
+table.display{
+   border: 1px solid #000000 ;
+}
+
+h1 {
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   //    color: #C32020;
+}
+
+
+input.smallBtn {
+
+}
+
+.helpText{
+   font-family: Arial, Helvetica, sans-serif ;
+   color: #999999 ;
+}
+
+.lighterHelpText{
+   font-family: Arial, Helvetica, sans-serif ;
+   color: #bbbbbb;
+}
+
+.smallHelpText{
+   font-family: Arial, Helvetica, sans-serif ;
+   font-size: 75%;
+}
+
+.whiteBG {
+   background-color: #FFFFFF;
+}
+
+/*.specialRow {
+    background-color: #CFD6E3; 
+    height : 25px ;
+}*/
+
+/*.specialRow {
+    background-image: linear-gradient(bottom, rgb(28,8,28) 0%, rgb(218,188,219) 50%);
+    background-image: -o-linear-gradient(bottom, rgb(28,8,28) 0%, rgb(218,188,219) 50%);
+    background-image: -moz-linear-gradient(bottom, rgb(28,8,28) 0%, rgb(218,188,219) 50%);
+    background-image: -webkit-linear-gradient(bottom, rgb(28,8,28) 0%, rgb(218,188,219) 50%);
+    background-image: -ms-linear-gradient(bottom, rgb(28,8,28) 0%, rgb(218,188,219) 50%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(28,8,28)),
+        color-stop(0.5, rgb(218,188,219))
+        );
+}*/
+/*.specialRow {
+color: white;
+background-image: linear-gradient(bottom, rgb(191,189,191) 0%, rgb(44,5,46) 50%);
+background-image: -o-linear-gradient(bottom, rgb(191,189,191) 0%, rgb(44,5,46) 50%);
+background-image: -moz-linear-gradient(bottom, rgb(191,189,191) 0%, rgb(44,5,46) 50%);
+background-image: -webkit-linear-gradient(bottom, rgb(191,189,191) 0%, rgb(44,5,46) 50%);
+background-image: -ms-linear-gradient(bottom, rgb(191,189,191) 0%, rgb(44,5,46) 50%);
+
+background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(191,189,191)),
+        color-stop(0.5, rgb(44,5,46))
+);
+}
+*/
+
+.specialRow{
+   background-image: linear-gradient(left bottom, rgb(178,196,214) 22%, rgb(23,26,26) 68%);
+   background-image: -o-linear-gradient(left bottom, rgb(178,196,214) 22%, rgb(23,26,26) 68%);
+   background-image: -moz-linear-gradient(left bottom, rgb(178,196,214) 22%, rgb(23,26,26) 68%);
+   background-image: -webkit-linear-gradient(left bottom, rgb(178,196,214) 22%, rgb(23,26,26) 68%);
+   background-image: -ms-linear-gradient(left bottom, rgb(178,196,214) 22%, rgb(23,26,26) 68%);
+
+   background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      right top,
+      color-stop(0.22, rgb(178,196,214)),
+      color-stop(0.68, rgb(23,26,26))
+      );
+   font-weight: bold;
+   color: white;
+}
+.specialSubRow {
+   background-color: #A3ADC0; 
+   color :#FFFFFF;
+   font-weight: bold;
+   height : 25px ;
+}
+
+.link {
+   cursor:pointer ;
+}
+
+.link:hover {
+   text-decoration: underline;
+   cursor: pointer;
+   cursor:hand;
+}
+
+.rightAlignedTextbox {
+   text-align:right;
+}
+
+.centerAlignedTextbox {
+   text-align:center;
+}
+
+.boldTextbox {
+   background-color:#FFFFFF;
+   font-family:Arial, Helvetica, sans-serif;
+   font-weight:bold;
+}	
+
+.mediumSelectBox {
+   width:150px;
+}
+
+.smallSelectBox {
+   width:75px;
+}
+
+.cursorPoint    {
+   cursor: pointer;
+   cursor:hand;
+}
+
+.errorInfo{
+   color: #FF0000 ;
+   border: 0 ;
+   cursor: default ;
+   font-style: italic ;
+   font-weight: bold;    
+}
+
+.validInfo{
+   color: #62C562 ;
+   border: 0 ;
+   cursor: default ;    
+   font-weight: bold;  
+}
+
+.selectedPatient {
+   font-weight: bold;
+}
+
+.productVersionBig {
+   font-weight: bold;
+   font-size: 120%;
+}
+
+.productVersionSmall {
+   font-weight: bold;
+   font-size: 80%;
+}
+
+.loginBox {
+   background-color: #ffffff; 
+}
+
+/* AutoSearch CSS */
+
+.suggestion_list
+{
+   background: #F1E7EF; 
+   border: 1px solid;
+   cellpadding: 4px;
+   cellspacing: 0px;
+   width: 500px;
+}
+
+.suggestion_list th
+{
+   background: #744A6A;
+   color: white;
+   font-family:Arial, Helvetica, sans-serif;
+   font-weight:bold;
+   width: 25%;
+}
+
+.suggestion_list td
+{
+   font-family:Arial, Helvetica, sans-serif;
+}
+
+.suggestion_list a
+{
+   text-decoration: none;
+   color: navy;
+}
+
+.suggestion_list .selected
+{
+   background: navy;
+   color: white;
+}
+
+.suggestion_list .selected a
+{
+   color: white;
+}
+
+#autoSearch
+{
+   display: none;
+}
+
+/* CSS Document */
+
+.tableHeaderColor{
+   //	background-color: #C32020; 
+   color: #FFFFFF;
+}
+
+
+.workAreaBackgroundColor{
+   background-color: #BC96B3;
+}
+.tableBodyColor{
+   background-color: #E1CFDD;
+}
+.activityBackgroundColor{
+   background-color: #E1CFDD;
+}
+.workTableBodyColor{
+   background-color:#E7D7E4; //Medium: #F1E7EF; 
+}
+
+.button{
+   height: 2em;
+   width: 6em;
+   border: thin outset ;
+   background-color:#E1CFDD;
+   color:#000000;
+   font-family:Arial, Helvetica, sans-serif;
+   font-weight: bold;
+}
+
+.bannerHeader{
+   font-family:Arial, Helvetica, sans-serif;
+   color:#FFFFFF;
+   font-weight: bold;
+}
+
+.bannerBody{
+   font-family:Arial, Helvetica, sans-serif;
+   color:#FFFFFF;
+}
+
+.titleText{
+   font-family:Arial, Helvetica, sans-serif;
+   font-weight:bold;
+   color:#FFFFFF;
+}
+
+.activityHeader{
+   font-family:Arial, Helvetica, sans-serif;
+   color:#000000;
+   font-weight: bold;
+
+}
+
+.activityBody{
+   font-family:Arial, Helvetica, sans-serif;
+   color:#000000;
+   font-weight:bold;
+}
+
+.tableHeader{
+   font-family:Arial, Helvetica, sans-serif;
+   color: #FFFFFF;
+   font-weight: bold;
+}
+
+.tableHeaderSmall{
+   font-family:Arial, Helvetica, sans-serif;
+   color:#FFFFFF;
+   font-weight:bold;
+}
+
+.tableElementHeader{
+   font-family:Arial, Helvetica, sans-serif;
+   font-weight: bold; 
+   color: #000000;
+}
+.tableElement{
+   font-family:Arial, Helvetica, sans-serif;
+   color:#000000;
+}
+.tableElement1{
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold ;
+   color: #000000;
+}
+.fieldGroupHeader{
+   font-family:Arial, Helvetica, sans-serif;
+   font-weight: bold; 
+   color: #000000;
+}
+
+.label{
+   font-family:  Verdana, Arial, Helvetica, sans-serif;
+   color: #000000;
+}
+.labelS{
+   font-family:Arial, Helvetica, sans-serif;
+   color: #000000;
+}
+.labelM{
+   font-family:Arial, Helvetica, sans-serif;
+   color: #000000;
+   font-weight: bold;
+}
+.selectionItemHeader{
+   font-family:Arial, Helvetica, sans-serif;
+   font-weight: bold; 
+   color: #000000;
+}
+.selectionItemBody{
+   font-family:Arial, Helvetica, sans-serif;
+   color:#000000;
+}	
+.textBox{
+   width:180px;
+   height:25px;
+   background-color:#FFFFFF;
+   font-family:Arial, Helvetica, sans-serif;
+   font-weight:bold;
+}
+
+.numberBox {
+   font-family:Arial, Helvetica, sans-serif;
+   color: #000000;
+   text-align:right;
+}
+
+.readOnlyLabel{
+   background-color: yellow;
+   border: none ;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   color: #000000;
+}
+
+.borderLine{
+   border-top:1px solid #360;
+   border-left:1px solid #360;
+   border-bottom:1px solid #360;
+   border-right:1px solid #360;
+   border-color:#999999
+}
+
+.smallLabel{
+   font-family:Arial, Helvetica, sans-serif;
+   color: #000000;
+   text-decoration:none;
+}
+
+.readOnlyTextBox{
+   background-color: #FFFFFF;
+   border: none ;
+}
+
+.numberTextBox{
+   text-align:right;
+}
+
+.readOnlyTableElement{
+   background-color: #E9E9EB;
+   border: none ;
+   font-family:Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   color: #000000;
+}
+
+.redFont {
+   color:red;
+}
+
+.redBoldFont {
+   color:red;	
+   font-weight: bold;
+}
+
+
+.deleteButton{
+   height: 1.5em;
+   width: 1.1em;
+   color:red;
+   font-family:Arial, Helvetica, sans-serif;
+   font-weight: bold;
+}
+
+input.deleteSmallButton {
+   cursor: pointer;
+   font-weight: bold;
+   border: 0;
+   color: gray ;
+   font-style: italic ;
+   height : 20px ;
+}
+
+.deleteSmallRedButton {
+   cursor: pointer;
+   font-weight: bold;
+   border: 0;
+   color: red ;
+   font-style: italic ;       
+   height : 20px ;
+}
+
+.smallRedButton {
+   cursor: pointer;
+   font-weight: bold;
+   border: 0;
+   color: red ;
+   font-style: italic ;       
+   height : 20px ;
+}
+
+input.deleteSmallButton:hover {
+   cursor: pointer;
+   font-weight: bold;
+   border: 0;
+   color: #FF0000 ;
+   font-style: italic ;
+   height : 20px ;
+}
+
+.addSmallButton {
+   cursor: pointer;
+   cursor: hand;
+   border: 0;
+}
+
+td.displayLabel {
+   font-family:Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   color:#000000;
+}
+
+.menuListbox{
+   font-family: Arial, Helvetica, sans-serif;
+   color: #000000;
+}
+
+.menuButton{
+   font-family: Arial, Helvetica, sans-serif;
+}
+.subButton{
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.graphSubLabel{
+   font-family: Arial, Helvetica, sans-serif;
+}
+.graphIndicatorText{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 16px;
+   color: #0000FF;
+   font-weight: bold;
+
+}
+.graphListbox{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 8pt;
+}
+
+.graphLabels{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 12px;
+}
+.graphBottomLinks{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 9px;
+   color: blue;
+}
+.graphTitle{
+   font-family: Arial, Helvetica, sans-serif;
+   color: black;
+   font-weight: bold;
+   font-size: 12px;
+}
+
+.menuSubLabel{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 12px;
+   color: #000000;
+}
+
+.menuSubLabel2{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 10px;
+   color: #000000;
+}
+
+.msl{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 12px;
+   color: #000000;
+}
+.TSmenuSubLabel{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 80%;
+   color: #000000;
+}
+
+.tableBorder{
+   border: 1;
+}
+
+.cellColor{
+   border-style: none;
+   border-width: medium;
+
+}
+
+.menuFont{
+   font-family: Arial, Helvetica, sans-serif;
+   color: white;
+   font-weight: bold;
+   font-size: 80%;
+}
+
+.barColor{
+   color: #FFFFFF;
+   background-color: #C32020;
+}
+
+.subBarColor{
+   background-color: #FFFF99;
+}
+
+.subBarText{
+   font-family: Arial, Helvetica, sans-serif;
+   color: black;
+   font-weight: bold;
+}
+
+.activityTableBackground{
+   background-color: #F6F6F6;
+}
+
+
+.ActivitySwitchingFont{
+   font-family: Arial, Helvetica, sans-serif;
+   color: #000000;
+}
+
+.errorPageTitle{
+   font-family: Arial, Helvetica, sans-serif;
+   color: red;
+   font-weight: bold;
+}
+
+.errorPageMessage{
+   font-family: Arial, Helvetica, sans-serif;
+   color: blue;
+}
+
+.errorPageColor{
+   background-color: white;
+}
+
+.portalTabsBGcolor{
+   background-color: #F6F6F6;
+}
+
+.portalTabsBanner{
+   font-family: Arial, Helvetica, sans-serif;
+   color: blue;
+   font-weight: bold;
+}
+
+.portalTabsBanner2{
+   font-family: Arial, Helvetica, sans-serif;
+   color: blue;
+   font-weight: bold;
+}
+
+.smallFont{
+   font-family: Arial, Helvetica, sans-serif;
+   color: #000000;
+}
+
+.imageLoadMessage{
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   color: #000000;
+}
+
+.tableText{
+   font-family: Arial, Helvetica, sans-serif;
+   color: #000000;
+}
+.tableTextButton{
+
+   color: #000000;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 9px;
+   height: 2em;
+   width: 5em;
+}
+
+.MDUITableHeaderFont{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 12px;
+   //  background-color: #C32020;
+   color: #FFFFFF;
+}
+
+.MDUITableHeaderColor{
+   //  background-color: #C32020;
+}
+.drilldownTableHeaderColor{
+   background-color: #EEEEEE;
+}
+
+.drilldownTableHeaderFont{
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   font-size: 12px;
+   color: #000000;
+}
+.subTableHeaderColor{
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   color: #CCCCCC;
+   background-color: #FFFFCC;
+   font-size: 20px;
+}
+.printChartTitle{
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   color:  #CC3333;
+   font-size: 18px;
+}
+
+.printChartSubTitle{
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   color: blue;
+   font-size: 10px;
+}
+.printGroupBy{
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   font-size: 14px;
+}
+
+.printIndicatorText{
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   color: blue;
+   font-size: 14px;
+}
+
+.printTableContent{
+   font-family: Arial, Helvetica, sans-serif;
+   color: blue;
+   font-size: 13px;
+}
+
+.mainBanner{
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   color: black;
+   font-size: 50px;
+}
+.drillDownTitle{
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   color: #FFFFFF;
+   font-size: 120%;
+}
+
+.drillDownTitle2{
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   color: #000000;
+   font-size: 120%;
+}
+
+.welcomeFont{
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   font-size: 80%;
+}
+
+#loginPage{
+   background-color: #FFFFFF; 
+   color: #ffffff;
+}
+
+.backgroundColor{
+   background-color: white;
+}
+
+.lhsMenuTable {
+   background-color: #ffffff; 
+}
+
+.lhsMenuTableInset {
+   background-color: #FFFFFF;
+}
+
+.lhsMenuHeader {
+   background-color: #A3ADC0; 
+   text-align: left ;
+   color: #ffffff;
+   font-weight: bold;
+   border: 0 ;
+   height: 25px;
+}
+
+.lhsMenuTable a {
+   color: #000000;
+}
+
+.dialogForm {
+   background-color: #F0F2F4;
+}
+
+.dialogForm .tableHeader {
+   background-color: #CFD6E3;
+   color: #000000;
+   font-weight: bold;
+}
+
+.infoBox {
+   position: absolute;
+   left: 40%;
+   top: 40%;
+   margin: auto;
+   background-color: #FFFF66; 
+   color: black;
+   font-family: Arial, Helvetica, sans-serif ;
+   text-align: center ;
+   margin: 10px 0 0 0 ;
+   border: #666666 1px solid ;
+}
+
+.detailsDiv{
+   background-color:#C9C9FF;
+}
+
+.helpDesk {
+   background-color: #FFFF66;
+}
+.scrollBar {
+   scrollbar-face-color : #CFD6E3;
+   scrollbar-highlight-color : #F0F2F4; 
+   scrollbar-darkshadow-color : #CFD6E3;
+   scrollbar-3dlight-color : #CFD6E3;
+   scrollbar-shadow-color : #CFD6E3;
+}
+
+.breadcrumbs_temp{
+   font-family: Arial, Helvetica, sans-serif;
+   color: black;
+   font-size: 80%;
+}
+
+.subItemList {
+   font-size: 100%;
+
+}
+
+.unitString {
+   font-size: 80%;
+   font-family: Arial, Helvetica, sans-serif ;
+   color: #999999 ;
+}
+
+
+.subHeader{
+   background-color: #D9D9FF;
+}
+
+.mainHeader{
+   background-color: #B7B7FF;
+}
+
+
+
+.lightHeader{
+   background-color: #F3F3FF;
+}
+.roomBooked {
+   background-color:blue;
+}
+
+.hidenBookingInfo {
+   position: absolute; 
+   width: 550px;
+   height: 200px;
+   left: 100px;
+   top: 150px;
+   visibility: hidden;
+   display: none;
+}
+
+.visibleBookingInfo {
+   position: absolute; 
+   width: 550px;
+   height: 200px;
+   left: 100px;
+   top: 150px;
+   visibility: visible;
+   display: block;
+   z-index: 0;
+   background-color: #C5C5FF;
+}
+
+.shownPatientInfoAbsolute {
+   position: absolute; 
+   width: 700px;
+   height: 150px;
+   visibility: visible;
+   display: block;
+   z-index: 0;
+   background-color: #C5C5FF;
+}
+
+.hiddenPatientInfoAbsolute {
+   position: absolute; 
+   visibility: hidden;
+   display: none;
+}
+
+.patientDivCloseButton {
+   color: red;
+   cursor: pointer;
+   cursor: hand;
+   font-weight: bold;
+}
+
+.patientCentricViewHeader {
+   cursor: pointer;
+   cursor: hand;
+   background-color: #EFE7FF;
+   height: 25px;
+}
+
+.helpDesk {
+   background-color: #FFFF66;
+}
+
+.innerDiv{
+   background-color:#C5C5FF;
+}
+
+.clickMe {
+   color: blue;
+   cursor: pointer;
+   cursor: hand;
+}
+
+.clickableRow {
+   cursor: hand;
+}
+
+.maintenanceMsg_1 {
+   background-color: #FFCC00 ;
+   color: #000000 ;
+}
+
+.maintenanceMsg_2 {
+   background-color: #FFFF00 ;
+   color: #000000 ;
+   font-weight: bold;
+}
+
+.maintenanceMsg_3 {
+   background-color: #FFFF00;
+   color: red ;
+   font-weight: bold;
+}
+
+.evenRow input.searchBox {
+   background-color:#ffffff;
+   height: 20px;
+   border:1px solid;
+}
+
+.popup {
+   background-color: #BC96B3;
+}
+
+.popupHeader {
+   background-color: #E7D7E4; 
+
+}
+
+.collapseBorder {
+   border-collapse:collapse;
+}
+
+.loadingMessage {
+   background-color: #FFFFCC;
+   border: 1px gray solid;
+   height: 40px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-right: 5px;
+   padding-left: 5px;
+}
+.popupColor {
+   border: 2px #7F8DA8 solid;
+   border-radius: 15px; 
+}
+
+tr.popupColor {
+   background-color: #7F8DA8 ;
+   text-align: left ;
+   color: #ffffff;
+   font-weight: bold;
+   border: 0 ;
+   height: 20px;
+   border-radius: 15px;
+}
+
+.horizontalScroll {
+   overflow-x: scroll;
+}
+
+.level1 {
+   background-color: #E0D1FE ;
+}
+
+.level2 {
+   background-color: #E8DDFC ;
+}
+
+.level3 {
+   background-color: #F1EBFD ;
+}
+
+.level4 {
+   background-color: #F8F7FB ;
+}
+
+.divBorder { 
+   border-width: .1em; 
+   border-style: solid; 
+   border-color: gray; 
+} 
+.broadCastInfoLowSeverity {
+   font-weight: bold;
+   font-size: 100%;
+   text-align: center;
+   color: #0000FF;
+}
+
+.broadCastInfoMediumSeverity {
+   font-weight: bold;
+   font-size: 100%;
+   text-align: center;
+   color: #FF00FF;
+}
+
+.broadCastInfoHighSeverity {
+   font-weight: bold;
+   font-size:  100%;
+   text-align: center;
+   color: #FF0000;
+}
+
+.productionEnvBanner {
+   background: url("../images/medics_banner.jpg") #445677 no-repeat;
+   color: #ffffff;
+} 
+
+.productionEnvBanner a {
+   color: #ffffff;
+}
+
+.trainingEnvBanner {
+   background-color:#FFFF00;
+}
+
+.trainingEnvDisplayCaptionBig {
+   font-size: 250%;
+   font-weight: bold;	
+   color: red;	
+}
+
+.trainingEnvDisplayCaptionSmall {
+   font-size: 100%;
+   font-weight: bold;	
+   color: red;	
+   text-align: center;
+}
+
+.normalText {
+   font-size: 80% ;
+}
+
+.selectedTab {
+   background-color: yellow;
+   font-weight: bold;
+   font-size: 115%;
+   color: #000000;
+}
+.unSelectedTab{
+   background-color: #E7D7E4;
+}
+
+.insetHeader {
+   background-color: #CED7F2; 
+   height: 20px;
+}
+
+.insetHeaderColor {
+   background-color: #CED7F2; 
+}
+
+.insetBoxShape {
+   border-top: 1px solid #360 ;
+   border-left: 1px solid #360 ; 
+   border-right: 1px solid #360 ; 
+   border-bottom: 1px solid #360 ; 
+   border-color: #CED7F2; 
+}
+
+.documentSection { 
+   background-color: #C6CFE8;
+   color: #000000;
+   height: 25px;
+}
+
+.documentSection td, th { 
+   height: 25px;
+}
+
+.documentSubSection { 
+   background-color: #D7DFF7;
+   color: #000000;
+}
+
+.episodeRow {
+   background-color: #9999FF;
+   color: #FFFFFF;
+}
+
+.visitDetailsBackgroundColor{
+   background-color: #CDCDD8;
+   color: #000000;
+}
+
+.episodesRow {
+   background-color: #C0C6D3;
+   color: #0000CC;
+}
+
+.visitsRow{
+   background-color: #CDD1DC;
+   color: #0000CC;
+}
+
+.sectionBackgroundColor{
+   background-color: #FFFFFF;
+}
+
+.flatTable {
+   background-color: #999999;
+}
+
+.flatTableHeader {
+   background-color: #D7DFF7;
+   color: #000000;
+}
+
+.flatTableRow {
+   background-color: white;
+}
+
+.file {
+   font-size: 115%;
+}
+
+.EPRHeader {
+   color: #FFFFFF;
+   background-color: #5E709B;
+   font-size: 11px;
+}
+
+.EPRPatient {
+   color: #FFFFFF;
+   background-color: #5E709B;
+   font-size: 14px;
+}
+
+.EPRBackground {
+   background-color: #E4E2E7;
+}
+
+.PortletHeader {
+   color: #FFFFFF;
+   font-size: 11px;
+}
+
+.PortletContentHeader {
+   color: #4A66B0;
+   font-size: 11px;
+}
+
+.PortletContentSmallHeader {
+   color: #4A66B0;
+   font-size: 9px;
+}
+
+.PortletContent {
+   font-size: 11px;
+}
+
+.tabularHeader2 {
+   background-color: #D8D8ED;
+}
+
+.abnormalResult {
+   color: #C32020;
+}
+
+.normalResult {
+   color: #000000;
+}
+
+.incrementalSearchBGColor {
+   background-color: #9999CC;
+}
+
+.accordion_toggle {
+   display: block;
+   height: 25px;
+   background: url("/../images/accordion_toggle.jpg") no-repeat top right #D6F6B8;
+   padding: 0 10px 0 10px;
+   line-height: 20px;
+   color: #000000;
+   font-weight: normal;
+   text-decoration: none;
+   outline: none;
+   font-size: 12px; 
+   border-bottom: 1px solid #FFFFFF;
+   cursor: pointer;
+   margin: 0 0 0 0;
+}
+
+.accordion_toggle_active {
+   background: url("/../images/accordion_toggle_active.jpg") no-repeat top right #FED2F8;
+   color: #000000;
+   border-bottom: 1px solid #FFFFFF;
+}
+
+.accordion_content {
+   background-color: #ffffff;
+   color: #444444;
+   overflow: hidden;
+}
+
+.accordion_content h2 {
+   margin: 15px 0 5px 10px;
+   color: #0099FF;
+}
+
+.accordion_content p {
+   line-height: 150%;
+   padding: 5px 10px 15px 10px;
+}
+/*			
+.vertical_accordion_toggle {
+  display: block;
+  height: 30px;
+  background: url("/../images/accordion_toggle.jpg") no-repeat top right #376092; // #a9d06a
+  padding: 0 10px 0 10px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+  font-size: 12px;
+  color: #000000;
+  border-bottom: 1px solid #cde99f;
+  cursor: pointer;
+  margin: 0 0 0 0;
+}
+
+.vertical_accordion_toggle_active {
+  background: url("/../images/accordion_toggle_active.jpg") no-repeat top right #376092 ; // #e0542f
+  color: #000000;
+  border-bottom: 1px solid #376092;
+}
+
+.vertical_accordion_content {
+  background-color: #ffffff;
+  color: #444444;
+  overflow: hidden;
+}
+
+.vertical_accordion_content h2 {
+  margin: 15px 0 5px 10px;
+  color: #0099FF;
+}
+
+.vertical_accordion_content p {
+  line-height: 150%;
+  padding: 5px 10px 15px 10px;
+}
+*/
+#desktopWell {
+   background-color:#ffffff;    
+}
+
+.wellHeader {
+   background-color: #E4E2E7;
+}
+
+#desktopContainer {
+   background-color:#E4E2E7;
+}
+
+.leftBorder{
+   border-style:solid;
+   border-left-width:1px;
+}
+.rightBorder{
+   border-style:solid;
+   border-right-width:1px;
+}
+.topBorder{
+   border-style:solid;
+   border-top-width:1px;
+}
+.bottomBorder{
+   border-style:solid;
+   border-bottom-width:1px;
+}
+.noRightBorder{
+   border-right-width:0px;
+}
+.noLeftBorder{
+   border-left-width:0px;
+}
+.noTopBorder{
+   border-top-width:0px;
+}
+.noBottomBorder{
+   border-bottom-width:0px;
+}
+.colorTableHeader{
+   background-color: #DFE3EC;
+}
+.cellBorder{
+   border-color: #DFE3EC;
+}
+.cellBackground{
+   background-color: #DFE3EC;
+}
+
+.cellBackgroundLight{
+   background-color: #F0F2F7;
+}
+
+.borderCollapse{
+   border-collapse:separate;
+}
+
+.labelText {
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 100%;
+   color: #000099;
+}
+
+.loginShadow {
+   box-shadow: 10px 10px 10px #000000;
+   -webkit-box-shadow: 10px 10px 10px #000000;
+   -moz-box-shadow: 10px 10px 10px #000000;
+   background-color: #445677;
+   /* -moz-border-radius: 10px;
+   -webkit-border-radius: 10px; */
+   border: 1px solid #445677;
+   padding: 1px;
+}
+
+.shadow {
+   box-shadow: 4px 4px 4px gray;
+   -webkit-box-shadow: 4px 4px 4px gray;
+   -moz-box-shadow: 4px 4px 4px gray;
+}
+
+.note {
+   background-color: #FFFFCC;
+}

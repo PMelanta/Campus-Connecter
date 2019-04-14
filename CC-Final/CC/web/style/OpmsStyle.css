@@ -1,0 +1,461 @@
+/* 
+    Document   : OpmsStyle
+    
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.backGroundColor{
+ background-image: linear-gradient(top, rgb(255,229,255) 0%, rgb(232,232,232) 50%);
+background-image: -o-linear-gradient(top, rgb(255,229,255) 0%, rgb(232,232,232) 50%);
+background-image: -moz-linear-gradient(top, rgb(255,229,255) 0%, rgb(232,232,232) 50%);
+background-image: -webkit-linear-gradient(top, rgb(255,229,255) 0%, rgb(232,232,232) 50%);
+background-image: -ms-linear-gradient(top, rgb(255,229,255) 0%, rgb(232,232,232) 50%);
+
+background-image: -webkit-gradient(
+	linear,
+	right top,
+	right bottom,
+	color-stop(0, rgb(255,229,255)),
+	color-stop(0.5, rgb(232,232,232))
+);
+}
+
+.desktopTitle{
+    background-image: linear-gradient(left bottom, rgb(59,50,50) 7%, rgb(219,44,44) 54%, rgb(67,97,97) 77%);
+background-image: -o-linear-gradient(left bottom, rgb(59,50,50) 7%, rgb(219,44,44) 54%, rgb(67,97,97) 77%);
+background-image: -moz-linear-gradient(left bottom, rgb(59,50,50) 7%, rgb(219,44,44) 54%, rgb(67,97,97) 77%);
+background-image: -webkit-linear-gradient(left bottom, rgb(59,50,50) 7%, rgb(219,44,44) 54%, rgb(67,97,97) 77%);
+background-image: -ms-linear-gradient(left bottom, rgb(59,50,50) 7%, rgb(219,44,44) 54%, rgb(67,97,97) 77%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	right top,
+	color-stop(0.07, rgb(59,50,50)),
+	color-stop(0.54, rgb(219,44,44)),
+	color-stop(0.77, rgb(67,97,97))
+);
+}
+
+.info, .success, .warning, .error, .validation {
+    border: 1px solid;
+    margin: 0px 0px;
+    /*padding:0px 0px 0px 0px;*/
+    padding:10px 10px 10px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+.info {
+    color: #00529B;
+    background-color: #BDE5F8;
+    background-image: url('../images/alert/info.png');
+}
+.success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image:url('../images/alert/success.png');
+}
+.warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url('../images/alert/warning.png');
+}
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('../images/alert/error.png');
+}
+
+.errorMes {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+
+/*.hidden {
+    visibility: hidden;
+     display: none;
+}*/
+
+.visible{
+    visibility: visible;
+}
+
+.mainLink {
+    background-color: #A3ADC0; 
+    text-align: left ;
+    color: #ffffff;
+    border: 0 ;
+    height: 25px;
+}
+
+.mainLinkMouseOver{
+    background-color: #4169E1; /*#708090;  */
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.parentLink {
+    background-color: #4169E1; 
+    text-align: left ;
+    color: white;
+    border: 0 ;
+    height: 25px;
+}
+
+.parentLinkMouseOver{
+    background-color: #191970; /*#708090;  */
+    cursor: pointer;
+    height: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.childLink {
+    background-color: #A3ADC0; 
+    text-align: left ;
+    color: black;
+    border: 0 ;
+    height: 25px;
+}
+
+
+
+.childLinkMouseOver{
+    background-color: #708090; /*#708090;  */
+    cursor: pointer;
+    height: 25px;
+    color: black;
+    font-weight: bold;
+}
+
+.shortcutImg{
+    height: 25px;
+    width: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.visible{
+    visibility: visible;
+}
+
+.progressBar{
+    background-image: url('../images/loading/progress_bar.gif');
+    background-repeat: no-repeat;
+}
+
+a.ovalbutton{
+    background: transparent url('../images/common/oval-gray-left.gif') no-repeat top left;
+    display: block;
+    float: left;
+    font: normal 13px Tahoma; /* Change 13px as desired */
+    line-height: 16px; /* This value + 4px + 4px (top and bottom padding of SPAN) must equal height of button background (default is 24px) */
+    height: 24px; /* Height of button background height */
+    padding-left: 11px; /* Width of left menu image */
+    text-decoration: none;
+}
+
+a:link.ovalbutton, a:visited.ovalbutton, a:active.ovalbutton{
+    color: #494949; /*button text color*/
+}
+
+a.ovalbutton span{
+    background: transparent url('../images/common/oval-gray-right.gif') no-repeat top right;
+    display: block;
+    padding: 4px 11px 4px 0; /*Set 11px below to match value of 'padding-left' value above*/
+}
+
+a.ovalbutton:hover{ /* Hover state CSS */
+    background-position: bottom left;
+}
+
+a.ovalbutton:hover span{ /* Hover state CSS */
+    background-position: bottom right;
+    color: black;
+}
+
+.buttonwrapper{ /* Container you can use to surround a CSS button to clear float */
+    overflow: hidden; /*See: http://www.quirksmode.org/css/clearing.html */
+    float:right;
+    /* width: 100%; */
+}
+
+
+/** {
+        margin:0;
+        padding:0;
+}
+
+body {
+        background:url(../../images/background.png) top left;
+        font: .8em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+h2{ 
+        margin-bottom:10px;
+}*/
+
+#wrapper{
+    /* width:720px; */
+    /* margin:40px auto 0;*/
+}
+
+#wrapper h1{
+    color:#FFF;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/*#wrapper a{
+        display:block;
+        font-size:1.2em;
+        padding-top:20px;
+        color:#FFF;
+        text-decoration:none;
+        text-align:center;
+}*/
+
+
+#tabContainer {
+    /* width:700px; */
+    /* padding:15px;*/
+    /* background-color:#2e2e2e;*/
+    /*-moz-border-radius: 4px;
+    border-radius: 4px; */
+}
+
+/* classes used for tabs */
+.tabs{
+    height:30px;
+}
+
+.tabs > ul{
+    font: 1em;
+    list-style:none;
+}
+
+.tabs > ul > li{
+    margin:0 2px 0 0;
+    padding:7px 10px;
+    display:block;
+    float:left;
+    color:#FFF;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    -moz-border-radius-bottomright: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    border-top-left-radius:4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px; 
+    background: #C9C9C9; /* old browsers */
+    background: -moz-linear-gradient(top, #0C91EC 0%, #257AB6 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0C91EC), color-stop(100%,#257AB6)); /* webkit */
+}
+
+.tabs > ul > li:hover{
+    background: #FFFFFF; /* old browsers */
+    background: -moz-linear-gradient(top, #FFFFFF 0%, #F3F3F3 10%, #F3F3F3 50%, #FFFFFF 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(10%,#F3F3F3), color-stop(50%,#F3F3F3), color-stop(100%,#FFFFFF)); /* webkit */
+    cursor:pointer;
+    color: #333;
+}
+
+.tabs > ul > li.tabActiveHeader{
+    background: #FFFFFF; /* old browsers */
+    background: -moz-linear-gradient(top, #FFFFFF 0%, #F3F3F3 10%, #F3F3F3 50%, #FFFFFF 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(10%,#F3F3F3), color-stop(50%,#F3F3F3), color-stop(100%,#FFFFFF)); /* webkit */
+    cursor:pointer;
+    color: #333;
+}
+
+/* END: classes used for tabs */
+
+#pdContentArea { 
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px; 
+    /* padding:10px 10px 25px;*/
+    background: #FFFFFF; /* old browsers */
+    background: -moz-linear-gradient(top, #FFFFFF 0%, #FFFFFF 90%, #e4e9ed 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(90%,#FFFFFF), color-stop(100%,#e4e9ed)); /* webkit */
+    margin:0;
+    color:#333;
+}
+
+.label{
+    /*    -moz-border-radius: 15px;
+        border-radius: 15px;
+        background: #e4e9ed;*/
+    left: 5px;
+    align :left;
+}
+
+.data{
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background: #e4e9ed; 
+    align :left;
+}
+
+.loginHeader{
+    color: black;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background: #e4e9ed; 
+    
+}
+
+.button{
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background: #C9C9C9;
+    color:#191970;
+    font-weight: bold;
+    cursor: pointer;
+    align :left;
+}
+
+.status{
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background: #C9C9C9;
+    color:#191970;
+    font-weight: bold;
+    align :left;
+}
+
+.thinLine{
+    border: none; 
+    height: 1px; 
+    color: #0b559b; 
+    background: #0b559b;  /* thistle */
+}
+
+.lightText{
+    border: none; 
+    color: #0b559b; 
+}
+
+.MultipleCheckBoxes{
+    padding: 4px; 
+}
+
+.weekNames{
+    padding: 10px;
+    font-weight: bold;
+    /*color: #000066;*/
+    /*    background-color: #A2A2A2;*/
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+background-image: linear-gradient(right top, rgb(3,91,150) 26%, rgb(0,209,209) 63%);
+background-image: -o-linear-gradient(right top, rgb(3,91,150) 26%, rgb(0,209,209) 63%);
+background-image: -moz-linear-gradient(right top, rgb(3,91,150) 26%, rgb(0,209,209) 63%);
+background-image: -webkit-linear-gradient(right top, rgb(3,91,150) 26%, rgb(0,209,209) 63%);
+background-image: -ms-linear-gradient(right top, rgb(3,91,150) 26%, rgb(0,209,209) 63%);
+
+background-image: -webkit-gradient(
+	linear,
+	right top,
+	left bottom,
+	color-stop(0.26, rgb(3,91,150)),
+	color-stop(0.63, rgb(0,209,209))
+);  
+}
+
+.dayTaskMilestones{
+
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+background-image: linear-gradient(right top, rgb(215,220,224) 26%, rgb(71,115,115) 63%);
+background-image: -o-linear-gradient(right top, rgb(215,220,224) 26%, rgb(71,115,115) 63%);
+background-image: -moz-linear-gradient(right top, rgb(215,220,224) 26%, rgb(71,115,115) 63%);
+background-image: -webkit-linear-gradient(right top, rgb(215,220,224) 26%, rgb(71,115,115) 63%);
+background-image: -ms-linear-gradient(right top, rgb(215,220,224) 26%, rgb(71,115,115) 63%);
+
+background-image: -webkit-gradient(
+	linear,
+	right top,
+	left bottom,
+	color-stop(0.26, rgb(215,220,224)),
+	color-stop(0.63, rgb(71,115,115))
+);
+    
+    font-weight: bold;  
+}
+
+.backgroundImg{
+    background-image: url('../images/cc.png');
+/*    padding: 20px 0px 20px 0px;*/
+    height: 100%;
+ /*   width: 400px;*/
+    background-repeat: no-repeat;
+    background-color: #FFF;
+    background-position: 10px 40px;
+}
+
+div#menu { margin:5px auto; }
+
+.details{
+background-color: #d9e6f0;/*#d1e1f0;#a9c4df;#EDF5FF;#E0E6F8;#E5E5E5;*/
+border-radius : 8px 8px 8px 8px;
+}
+
+.dataField{
+   font-weight: bold;
+}
+
+.oddRow .textBoxBG{
+   background: #9ecaed;
+/*   border-radius: 7px;*/
+   color: white;
+    font-weight: bold;
+}
+
+.oddRow .textBoxBG:focus { 
+    outline: none;
+    border-color: #9ecaff;
+    box-shadow: 0 0 10px #9ecaed;
+/*    border-radius: 7px;*/
+    color: white;
+    font-weight: bold;
+}
+
+.evenRow .textBoxBG{
+   background: #9ecaed;
+/*   border-radius: 7px;*/
+   color: white;
+   font-weight: bold;
+   
+}
+
+.evenRow .textBoxBG:focus { 
+    outline: none;
+    border-color: #9ecaff;
+    box-shadow: 0 0 10px #9ecaed;
+/*    border-radius: 7px;*/
+    color: white;
+    font-weight: bold;
+}
+
+legend{
+   background-color: gray;
+   font-weight: bold;
+   color: white;
+}

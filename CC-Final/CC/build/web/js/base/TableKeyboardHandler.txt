@@ -1,0 +1,96 @@
+ PURPOSE :
+ The object defined in the file enables you to quickly add navigation of rows in tables using the keyboard
+ UP, DOWN, SPACE keys. It supports handling of DEL, ESC, and RET keys. All other keys are ignored. 
+ In addition, single and double click can be used to highlight a row and to select.
+
+ How does it work?
+
+ The object created installs event handlers (its local/member functions) for keydown, click, and dblclick events
+ on the specified table. For every event, the handlers can call an application specified callback function. If
+ the corresponding callback function is not specified, the handler ignores the event or proceeds with default 
+ behaviour. 
+
+ Default behaviours (if corresponding handler is NOT provided):
+
+ KEYUP   : Highlight the Previous row, if there is one. Otherwise do nothing.
+ KEYDOWN : Highlight the Next row, if there is one. Otherwise do nothing.
+ KEYRIGHT: Do nothing
+ KEYLEFT : Do nothing
+ SPACE   : Highlight the Next row, if there is one. Otherwise do nothing.
+ RETURN  : Do nothing
+ DELETE  : Do nothing
+ ESCAPE  : Do nothing
+
+ CLICK    : Highlight selected row.
+ DBLCLICK : Do nothing
+
+ The object implements a standard way of highlighting the currently selected row. 
+
+ Signature:
+
+      TableKeyboardHandler(tbl, params)
+
+ where 
+
+   tbl          is the table element where the row navigation must be implemented
+   params       is an associative array with variable number of arguments passed
+
+The keys to params can be
+
+   headerRows   number of header rows (that will be skipped to highlight the first row by default). Default 0.
+
+All the callback functions below are passed a single argument -- the current row. Except for cbHighlight(), a 
+return value is not expected from the callback functions.
+
+   cbHighlight  is the callback function that is called when the user navigates to a new row (resulting from 
+                key up or down, or click). Default null.
+
+	        Note : If defined, cbHighlight() is called prior to finalizing the selection of the row. 
+	        If the function returns false, the row is skipped. If the function returns true, the row is 
+	        considered valid for highlighting. This is useful when a table consists of rows that are 
+	        actually headers and should not be selectable. The application can return false for header 
+	        rows and true for selectable rows.
+   cbSpace      is the callback function that is called on SPC key press. Default null. If this is null,
+                a SPC bar will have the same effect as DOWN ARROW.
+   cbSelect     is the callback function that is called on RET key press or on double click. Default null.
+   cbEscape     is the callback function that is called on ESC key press. Default null.
+   cbDelete     is the callback function that is called on DEL key press. Default null.
+   cbShowDetail is the callback function that is called when the RIGHT key is pressed. Default null.
+   cbHideDetail is the callback function that is called when the LEFT key is pressed. Default null.
+
+*/
+
+/* Steps to begin using this feature:
+
+ Step 1: Include the following if not already included in your JSP. 
+
+<SCRIPT LANGUAGE="JavaScript" SRC=PROJECT_CTXT_PATH + "/js/base/DynamicTableTemplate.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC=PROJECT_CTXT_PATH + "/js/base/BrowserAbstraction.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC=PROJECT_CTXT_PATH + "/js/base/TableKeyboardHandler.js"></SCRIPT>
+
+ Step 2: Define a CSS class with name "selectedRow" in some CSS file. For example:
+
+.selectedRow {
+  background-color:yellow;
+}
+
+ Step 3: Assign the "class" attribute to every row. This is used to restore the style of the row after it is deselected.
+
+ Step 4: Define a function as shown below that can be called everytime your table is loaded.
+
+ In this example, I needed to handle Select and Escape keys. Other handlers are left unspecified.
+
+<script>
+
+function assignKeyboardHandler(tbl) {
+
+  new TableKeyboardHandler(tbl,
+ 	                   {
+		             cbSelect       : selectHandler,
+                             cbEscape       : escapeHandler
+                           });
+
+  // Required in some cases. Use this only if the focus does not automatically come to your table
+  tbl.focus(); 
+}
+</script>

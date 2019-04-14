@@ -1,0 +1,49 @@
+
+The method of interest here is encrypt(). I chose to make this class a
+singleton in order to ensure that there is only one instance of it at
+any given time to avoid concurrency issues and conflicts between
+generated hash values. For an explanation of this design pattern, try
+a google search for "java singleton pattern".
+
+Let's step through the code above to see what's going on:
+
+Step 1: The registration servlet will interface with our
+PasswordService class using this static getInstance() method. Whenever
+it is invoked, a check will be made to see if an instance of this
+service class already exists. If so, it will be returned back to the
+caller (registration servlet). Otherwise, a new instance will be
+created.
+
+Step 2: We are asking Java security API to obtain an instance of a
+message digest object using the algorithm supplied (in this case,
+SHA-1 message digest algorithm will be used. Both SHA and SHA-1 refer
+to the same thing, a revised SHA algorithm). Sun JDK includes JCA
+(Java Cryptography Architecture) which includes support for SHA
+algorithm. If your environment does not support SHA,
+NoSuchAlgorithmException will be thrown.
+
+Step 3: Feed the data: a) convert the plaintext password (eg,
+"jsmith") into a byte-representation using UTF-8 encoding format.  b)
+apply this array to the message digest object created earlier. This
+array will be used as a source for the message digest object to
+operate on.
+
+Step 4: Do the transformation: generate an array of bytes that
+represent the digested (encrypted) password value.
+
+Step 5: Create a String representation of the byte array representing
+the digested password value. This is needed to be able to store the
+password in the database. At this point, the hash value of the
+plaintext "jsmith" is "5yfRRkrhJDbomacm2lsvEdg4GyY=".
+
+Step 6: Return the String representation of the newly generated hash
+back to our registration servlet so that it can be stored in the
+database. The user.getPassword() method now returns
+"5yfRRkrhJDbomacm2lsvEdg4GyY="
+
+That's all. Your database password data is now encrypted and if an
+intruder gets a hold of it, he/she won't have much use of it. Note,
+you have to consider how you will handle "forgot password"
+functionality in this case as you now cannot simply send a password to
+the user's email address. (Well, you should not be doing things like
+that anyway) . Sounds to me like a perfect topic for my next article.
